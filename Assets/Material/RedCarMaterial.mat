@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: RedCarMaterial
+  m_Shader: {fileID: 4800000, guid: 41e5b12dca5c2a043978b9a64c704421, type: 1}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _CubeMap
+        second:
+          m_Texture: {fileID: 8900000, guid: 964d46e265833fa449501c71116c1e38, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: 0.078125
+      data:
+        first:
+          name: _Fresnel
+        second: 0.7
+      data:
+        first:
+          name: _SecondaryFresnel
+        second: 2.18
+      data:
+        first:
+          name: _FresnelInverse
+        second: 6.34
+      data:
+        first:
+          name: _Gloss
+        second: 0.1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 0.20446432, b: 0.21531612, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: 0.7091837, g: 0.12082839, b: 0.12852444, a: 0.5}
+      data:
+        first:
+          name: _Specular
+        second: {r: 1, g: 0.26000342, b: 0.23829722, a: 1}
+      data:
+        first:
+          name: _SecondaryColor
+        second: {r: 0.7058824, g: 0.19251336, b: 0.19251336, a: 1}
+      data:
+        first:
+          name: _RefColor
+        second: {r: 1, g: 0.6931818, b: 0.6931818, a: 1}
+      data:
+        first:
+          name: _RefColorInverse
+        second: {r: 1, g: 0.8181818, b: 0.8181818, a: 1}

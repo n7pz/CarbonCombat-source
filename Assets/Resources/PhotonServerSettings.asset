@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc66de91336704fa59a08c230b6ee3f8, type: 1}
+  m_Name: PhotonServerSettings
+  HostType: 1
+  ServerAddress: app.exitgamescloud.com
+  ServerPort: 5055
+  AppID: 0e8a7b27-9d29-4b3e-baec-d0ab2a0fce54

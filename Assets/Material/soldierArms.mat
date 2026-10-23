@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: soldierArms
+  m_Shader: {fileID: 23, guid: 0000000000000000e000000000000000, type: 0}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 23dfee31000604c49800ec45ef0d9469, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 8b96756f57c84b54bb79da77532be9af, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: 422207580cf74e649af4c37eee80cda0, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: 0.20208955
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.31764707, g: 0.5529412, b: 0.8784314, a: 0.53}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.7070313, g: 0.7089552, b: 0.640176, a: 1}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: 1, g: 1, b: 1, a: 0.5019608}

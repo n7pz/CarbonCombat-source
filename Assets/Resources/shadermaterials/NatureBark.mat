@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: NatureBark
+  m_Shader: {fileID: 4800000, guid: ae2fbceec531af94e8b2406db70e84c2, type: 1}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: f09829507d2bd8b4d97bce921e9cd611, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _LightMap
+        second:
+          m_Texture: {fileID: 2800000, guid: c35302bb6258e9d498d2387279f23658, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: 0.7
+      data:
+        first:
+          name: _BaseLight
+        second: 0.26044774
+      data:
+        first:
+          name: _AO
+        second: 5.0865674
+      data:
+        first:
+          name: _SquashAmount
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Scale
+        second: {r: 1, g: 1, b: 1, a: 1}

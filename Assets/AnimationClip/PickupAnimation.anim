@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PickupAnimation
+  m_Compressed: 0
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: -0, z: -0, w: -1}
+        inSlope: {x: 0, y: -0.5206835, z: 0, w: 0.002260208}
+        outSlope: {x: 0, y: -0.5206835, z: 0, w: 0.002260208}
+        tangentMode: 0
+      - time: 0.8333332
+        value: {x: -0, y: -0.41999242, z: -0, w: -0.9075276}
+        inSlope: {x: 0, y: -0.4716955, z: 0, w: 0.21829447}
+        outSlope: {x: 0, y: -0.4716955, z: 0, w: 0.21829447}
+        tangentMode: 0
+      - time: 1.6666658
+        value: {x: -0, y: -0.7621608, z: -0, w: -0.6473878}
+        inSlope: {x: 0, y: -0.33673736, z: 0, w: 0.39643446}
+        outSlope: {x: 0, y: -0.33673736, z: 0, w: 0.39643446}
+        tangentMode: 0
+      - time: 2.4999983
+        value: {x: -0, y: -0.9637537, z: -0, w: -0.26679355}
+        inSlope: {x: 0, y: -0.13923182, z: 0, w: 0.5029531}
+        outSlope: {x: 0, y: -0.13923182, z: 0, w: 0.5029531}
+        tangentMode: 0
+      - time: 3.3333309
+        value: {x: -0, y: -0.9862544, z: -0, w: 0.16523425}
+        inSlope: {x: 0, y: 0.08670517, z: 0, w: 0.5175314}
+        outSlope: {x: 0, y: 0.08670517, z: 0, w: 0.5175314}
+        tangentMode: 0
+      - time: 4.1499987
+        value: {x: -0, y: -0.8278912, z: -0, w: 0.56088877}
+        inSlope: {x: 0, y: 0.2954557, z: 0, w: 0.43610346}
+        outSlope: {x: 0, y: 0.2954557, z: 0, w: 0.43610346}
+        tangentMode: 0
+      - time: 4.966676
+        value: {x: -0, y: -0.5182042, z: -0, w: 0.8552569}
+        inSlope: {x: 0, y: 0.45113796, z: 0, w: 0.27334565}
+        outSlope: {x: 0, y: 0.45113796, z: 0, w: 0.27334565}
+        tangentMode: 0
+      - time: 5.783354
+        value: {x: -0, y: -0.11386409, z: -0, w: 0.99349636}
+        inSlope: {x: 0, y: 0.52347416, z: 0, w: 0.05999485}
+        outSlope: {x: 0, y: 0.52347416, z: 0, w: 0.05999485}
+        tangentMode: 0
+      - time: 6
+        value: {x: -0, y: 3.2584137E-07, z: -0, w: 1}
+        inSlope: {x: 0, y: 0.5265232, z: 0, w: 0.0023063258}
+        outSlope: {x: 0, y: 0.5265232, z: 0, w: 0.0023063258}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path:
+  m_CompressedRotationCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0.05, z: 0}
+        outSlope: {x: 0, y: 0.05, z: 0}
+        tangentMode: 0
+      - time: 3
+        value: {x: 0, y: 0.15, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 6
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: -0.05, z: 0}
+        outSlope: {x: 0, y: -0.05, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path:
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 2
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_Events: []

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: DroppedWeaponPrefabAnimation
+  m_Compressed: 0
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: -0, z: -0, w: -1}
+        inSlope: {x: 0, y: -0.78537583, z: 0, w: 0.005139112}
+        outSlope: {x: 0, y: -0.78537583, z: 0, w: 0.005139112}
+        tangentMode: 0
+      - time: 0.81666654
+        value: {x: -0, y: -0.5983246, z: -0, w: -0.8012538}
+        inSlope: {x: 0, y: -0.6292826, z: 0, w: 0.46990737}
+        outSlope: {x: 0, y: -0.6292826, z: 0, w: 0.46990737}
+        tangentMode: 0
+      - time: 1.6499991
+        value: {x: -0, y: -0.9624551, z: -0, w: -0.27144098}
+        inSlope: {x: 0, y: -0.21318397, z: 0, w: 0.7558928}
+        outSlope: {x: 0, y: -0.21318397, z: 0, w: 0.7558928}
+        tangentMode: 0
+      - time: 2.4833317
+        value: {x: -0, y: -0.92880994, z: -0, w: 0.37055638}
+        inSlope: {x: 0, y: 0.2910289, z: 0, w: 0.7294677}
+        outSlope: {x: 0, y: 0.2910289, z: 0, w: 0.7294677}
+        tangentMode: 0
+      - time: 3.3166642
+        value: {x: -0, y: -0.5112945, z: -0, w: 0.8594056}
+        inSlope: {x: 0, y: 0.6749535, z: 0, w: 0.40155748}
+        outSlope: {x: 0, y: 0.6749535, z: 0, w: 0.40155748}
+        tangentMode: 0
+      - time: 4
+        value: {x: -0, y: 3.2584137E-07, z: -0, w: 1}
+        inSlope: {x: 0, y: 0.78536904, z: 0, w: 0.0051417374}
+        outSlope: {x: 0, y: 0.78536904, z: 0, w: 0.0051417374}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path:
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 2
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_Events: []

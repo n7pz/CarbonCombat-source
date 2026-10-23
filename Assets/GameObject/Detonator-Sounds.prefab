@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  - 114: {fileID: 11405782}
+  m_Layer: 0
+  m_Name: Detonator-Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.2288876, y: -4.58802414, z: 38.6350098}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11405782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ab1258974d2d9b05dd9cf529015760, type: 1}
+  m_Name: 
+  on: 1
+  detonatorControlled: 1
+  startSize: 1
+  size: 1
+  explodeDelayMin: 0
+  explodeDelayMax: 0
+  startDuration: 2
+  duration: 2
+  timeScale: 1
+  startDetail: 1
+  detail: 1
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  startLocalPosition: {x: 0, y: 0, z: 0}
+  localPosition: {x: 0, y: 0, z: 0}
+  startForce: {x: 0, y: 0, z: 0}
+  force: {x: 0, y: 0, z: 0}
+  startVelocity: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  detailThreshold: 0
+  nearSounds:
+  - {fileID: 8300000, guid: d7d5f00f8426b494993d6049d12fea60, type: 1}
+  - {fileID: 8300000, guid: 9af381a9d3293c740ab5b9904a8d3c82, type: 1}
+  farSounds:
+  - {fileID: 8300000, guid: 1a786b3046b55614994c3b946d2bca23, type: 1}
+  - {fileID: 8300000, guid: 69adc2b68441d734a986bb935ff57b89, type: 1}
+  distanceThreshold: 80
+  minVolume: 0.4
+  maxVolume: 1
+  rolloffFactor: 0.5
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31da431656eeedd8e70475a2ef3727d5, type: 1}
+  m_Name: 
+  size: 10
+  color: {r: 0, g: 0.95384616, b: 0.9098225, a: 0.5568628}
+  explodeOnStart: 1
+  duration: 1.9392481
+  detail: 1.3111554
+  upwardsBias: 0
+  destroyTime: 7
+  useWorldSpace: 1
+  direction: {x: 0, y: 0, z: 0}
+  fireballAMaterial: {fileID: 0}
+  fireballBMaterial: {fileID: 0}
+  smokeAMaterial: {fileID: 0}
+  smokeBMaterial: {fileID: 0}
+  shockwaveMaterial: {fileID: 0}
+  sparksMaterial: {fileID: 0}
+  glowMaterial: {fileID: 0}
+  heatwaveMaterial: {fileID: 0}
+  autoCreateFireball: 1
+  autoCreateSparks: 1
+  autoCreateShockwave: 1
+  autoCreateSmoke: 1
+  autoCreateGlow: 1
+  autoCreateLight: 1
+  autoCreateForce: 1
+  autoCreateHeatwave: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

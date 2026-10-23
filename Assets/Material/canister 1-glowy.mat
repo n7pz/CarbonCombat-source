@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: canister 1-glowy
+  m_Shader: {fileID: 4800000, guid: e3fa362194ccd804ba0025c294de81b1, type: 1}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: 422207580cf74e649af4c37eee80cda0, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _EmissionLM
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.6683674, g: 0.12906297, b: 0.13631591, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.7653061, g: 0.043430895, b: 0.051735796, a: 1}
+      data:
+        first:
+          name: _FColor
+        second: {r: 1, g: 0.07947528, b: 0.0903272, a: 1}

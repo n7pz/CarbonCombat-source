@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  - 114: {fileID: 11405782}
+  - 82: {fileID: 8261526}
+  - 114: {fileID: 11454010}
+  - 114: {fileID: 11419550}
+  m_Layer: 0
+  m_Name: Detonator-Chunks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.05414534, y: -4.79768038, z: 1.59508848}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!82 &8261526
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: d9f4bbec2bb19e84d9501f3b9e1c3c1a, type: 1}
+  m_PlayOnAwake: 1
+  m_Volume: .858974338
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 800
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00124999997
+      value: 1
+      inSlope: -19.031374
+      outSlope: -19.031374
+      tangentMode: 0
+    - time: .0398493111
+      value: .537174702
+      inSlope: -3.39848328
+      outSlope: -3.39848328
+      tangentMode: 0
+    - time: .14046751
+      value: .246282518
+      inSlope: -1.18946087
+      outSlope: -1.18946087
+      tangentMode: 0
+    - time: .362903535
+      value: .0803903341
+      inSlope: -.297365218
+      outSlope: -.297365218
+      tangentMode: 0
+    - time: .590545356
+      value: .00673791952
+      inSlope: -.0743413046
+      outSlope: -.0743413046
+      tangentMode: 0
+    - time: .997063339
+      value: 0
+      inSlope: -.0475784838
+      outSlope: -.0475784838
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11405782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811874e7af0302999e9d55ca265ffb6f, type: 1}
+  m_Name: 
+  on: 1
+  detonatorControlled: 1
+  startSize: 1
+  size: 0.94599247
+  explodeDelayMin: 0
+  explodeDelayMax: 0
+  startDuration: 2
+  duration: 4
+  timeScale: 1
+  startDetail: 1
+  detail: 1
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  startLocalPosition: {x: 0, y: 0, z: 0}
+  localPosition: {x: 0, y: 0, z: 0}
+  startForce: {x: 0, y: 0, z: 0}
+  force: {x: 0, y: 20.2409, z: 0}
+  startVelocity: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  detailThreshold: 0
+  sprayObject: {fileID: 147589, guid: 6bc6145be810ccd4da40acd4524938c1, type: 2}
+  count: 0
+  startingRadius: 1.5
+  minScale: 0.2004919
+  maxScale: 0.5389314
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31da431656eeedd8e70475a2ef3727d5, type: 1}
+  m_Name: 
+  size: 10
+  color: {r: 0.652187, g: 0.88461536, b: 0.8631605, a: 0.54509807}
+  explodeOnStart: 1
+  duration: 3.2971828
+  detail: 1
+  upwardsBias: 0
+  destroyTime: 7
+  useWorldSpace: 1
+  direction: {x: 0, y: 0, z: 0}
+  fireballAMaterial: {fileID: 0}
+  fireballBMaterial: {fileID: 0}
+  smokeAMaterial: {fileID: 2100000, guid: c29b5856f2746bd43ba27840f273498c, type: 2}
+  smokeBMaterial: {fileID: 2100000, guid: 977170198e590ba43b5117738c24162b, type: 2}
+  shockwaveMaterial: {fileID: 0}
+  sparksMaterial: {fileID: 0}
+  glowMaterial: {fileID: 0}
+  heatwaveMaterial: {fileID: 0}
+  autoCreateFireball: 1
+  autoCreateSparks: 1
+  autoCreateShockwave: 1
+  autoCreateSmoke: 1
+  autoCreateGlow: 1
+  autoCreateLight: 1
+  autoCreateForce: 1
+  autoCreateHeatwave: 1
+--- !u!114 &11419550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26b825dc6655d67fab2482fae1303c8, type: 1}
+  m_Name: 
+  radius: 15
+  power: 150000
+--- !u!114 &11454010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622a750dc666a48a3e6a052fe5fe3b18, type: 1}
+  m_Name: 
+  on: 1
+  detonatorControlled: 1
+  startSize: 1
+  size: 35
+  explodeDelayMin: 0
+  explodeDelayMax: 0
+  startDuration: 2
+  duration: 2
+  timeScale: 1
+  startDetail: 1
+  detail: 1
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  startLocalPosition: {x: 0, y: 0, z: 0}
+  localPosition: {x: 0, y: 0, z: 0}
+  startForce: {x: 0, y: 0, z: 0}
+  force: {x: 0, y: 0, z: 0}
+  startVelocity: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  detailThreshold: 0
+  radius: 15
+  power: 15000
+  fireObject: {fileID: 0}
+  fireObjectLife: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

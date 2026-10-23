@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: porsche-textured-defaultcamo
+  m_Shader: {fileID: 22, guid: 0000000000000000e000000000000000, type: 0}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 6fee19ac63976014e9723d08d722a11a, type: 1}
+          m_Scale: {x: 7, y: 7}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: 422207580cf74e649af4c37eee80cda0, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: 0.30886793
+      data:
+        first:
+          name: _BumpAmt
+        second: 128
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.26530612, g: 0.25243613, b: 0.17302042, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.25, g: 0.25, b: 0.25, a: 1}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: 0.20408165, g: 0.20408165, b: 0.20408165, a: 0.5}
+      data:
+        first:
+          name: _FColor
+        second: {r: 1, g: 1, b: 1, a: 1}

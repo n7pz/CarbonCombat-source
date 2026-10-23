@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  - 114: {fileID: 11405782}
+  m_Layer: 0
+  m_Name: WhirldInPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2000, y: 7061.54004, z: 2000}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11405782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dfc4233dccf9aa0c2d9fbcc8d6f881e, type: 1}
+  m_Name: 
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 533a7e2b903e56bd42c553c8451e411f, type: 1}
+  m_Name: 
+  statusTxt: 
+  pixelLight:
+    serializedVersion: 2
+    m_Bits: 4294081019
+  vertLight:
+    serializedVersion: 2
+    m_Bits: 885764
+  minimapLight:
+    serializedVersion: 2
+    m_Bits: 512
+  gridTexture: {fileID: 2800000, guid: d36e4ae2e688d53429123f3cd8bc481f, type: 1}
+  fogcolor: {r: 0.050980393, g: 0.043137256, b: 0.20392157, a: 0}
+  authobj: {fileID: 0}
+  initworld: {fileID: 0}
+  seaMaterial: {fileID: 2100000, guid: 8163b86c4113db148b51c4b301d589e3, type: 2}
+  ctfprefabblue: {fileID: 147589, guid: 62a37a5dada1faa4b954d32dd9d3731d, type: 2}
+  ctfprefabred: {fileID: 147589, guid: ad79b03f06bd4ca42a3e97e3911bacef, type: 2}
+  fresnelA: {fileID: 2800000, guid: 2faeeaeec86d58142a4a07836419c466, type: 1}
+  bumpMap: {fileID: 2800000, guid: 9ab4ec46dc4369e4887368e5b5ba4f17, type: 1}
+  reflectionColor: {fileID: 2800000, guid: 51e212f234a611d4ea98a8747caf637f, type: 1}
+  horizonColor: {r: 0.7877098, g: 0.94507307, b: 1, a: 0.36}
+  whirldFloorPrefab: {fileID: 147589, guid: 450559390ab080c4a988ca10f6617eb3, type: 2}
+  faibridgemat: {fileID: 2100000, guid: 9f9891331685fee4e8b38b71a5e1e775, type: 2}
+  info: 
+  url: 
+  data: 
+  world: {fileID: 0}
+  whirldBuffer: {fileID: 0}
+  worldName: World
+  urlPath: 
+  threadAssetBundles: 0
+  threadTextures: 0
+  maxThreads: 5
+  loadedAssetBundles: []
+  whirldController: {fileID: 0}
+  whirldControllerObject: {fileID: 0}
+  readChr: 0
+  shaders:
+  - {fileID: 4800000, guid: 0a6c5e6500038c249a0454708d428932, type: 1}
+  - {fileID: 4800000, guid: 53cd114a27461dc4db1543aecd50b6f5, type: 1}
+  - {fileID: 4800000, guid: ae2fbceec531af94e8b2406db70e84c2, type: 1}
+  - {fileID: 4800000, guid: cfd117c34f7c87041a0863b5300d1327, type: 1}
+  - {fileID: 4800000, guid: 5d04b835d2cf5ab49a8c59300d832a52, type: 1}
+  - {fileID: 4800000, guid: 0ce98e0b4dc358d43beabfc567f7299c, type: 1}
+  - {fileID: 4800000, guid: 6a549fa7fd5ca584b85b25e57d85e93d, type: 1}
+  - {fileID: 1, guid: 0000000000000000e000000000000000, type: 3}
+  - {fileID: 4800000, guid: cc5451f91e44776459bb802ca753abda, type: 1}
+  - {fileID: 4800000, guid: 59d8c423495a5834ea333f65f2485b53, type: 1}
+  tprefabs:
+  - {fileID: 147589, guid: 39a33e5efcf23a148b0e3bc125343c3e, type: 2}
+  - {fileID: 147589, guid: 83716d3aa3969654ca4af29eeda76658, type: 2}
+  - {fileID: 147589, guid: c9fc473b99e693846a19385bc796eed5, type: 2}
+  - {fileID: 147589, guid: b9ad919349808a447be99c8726e59066, type: 2}
+  - {fileID: 147589, guid: 8bad94bb0f2acf343b20d977c4c52da4, type: 2}
+  - {fileID: 147589, guid: e20e138cde6ccc34ca5683c4640a7148, type: 2}
+  - {fileID: 147589, guid: b9f4c57dd6b8281429c7f0a6442b3626, type: 2}
+  - {fileID: 147589, guid: 803da7f0e85502a44bf9a1884b80e729, type: 2}
+  - {fileID: 147589, guid: f7a43f6d5e611824c8fdf395c1595051, type: 2}
+  - {fileID: 147589, guid: 903a3be8b47b2d549ada93b94b55c5cd, type: 2}
+  - {fileID: 147589, guid: 03f7dce754ef3d84a911b4de8abf39e8, type: 2}
+  - {fileID: 147589, guid: cd385bab4c017db449c1270e5301a37d, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

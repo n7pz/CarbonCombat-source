@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 479954}
+  - 82: {fileID: 8209266}
+  - 114: {fileID: 11405782}
+  - 114: {fileID: 11461526}
+  m_Layer: 0
+  m_Name: GrenadeLauncherAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.56679058, y: -3.29351616, z: -2.93555927}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!82 &8209266
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 79236a7866c70864980a20c8f316b2f7, type: 1}
+  m_PlayOnAwake: 1
+  m_Volume: .75
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 400
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .555555522
+      inSlope: 1.032479e-35
+      outSlope: 2.29812948e-40
+      tangentMode: 0
+    - time: .000200000024
+      value: .554994941
+      inSlope: -2.8043983
+      outSlope: -2.7984376
+      tangentMode: 0
+    - time: .000400000048
+      value: .554435492
+      inSlope: -2.7954576
+      outSlope: -2.79396749
+      tangentMode: 0
+    - time: .000800000096
+      value: .553319931
+      inSlope: -2.78428173
+      outSlope: -2.78204632
+      tangentMode: 0
+    - time: .00160000019
+      value: .551102221
+      inSlope: -2.76304793
+      outSlope: -2.75857687
+      tangentMode: 0
+    - time: .00320000038
+      value: .54671967
+      inSlope: -2.72169662
+      outSlope: -2.71275616
+      tangentMode: 0
+    - time: .00640000077
+      value: .538160503
+      inSlope: -2.64104414
+      outSlope: -2.62474608
+      tangentMode: 0
+    - time: .0128000015
+      value: .521821618
+      inSlope: -2.49054265
+      outSlope: -2.4604609
+      tangentMode: 0
+    - time: .0256000031
+      value: .491949916
+      inSlope: -2.22561646
+      outSlope: -2.17523193
+      tangentMode: 0
+    - time: .0512000062
+      value: .441412508
+      inSlope: -1.80847681
+      outSlope: -1.7356534
+      tangentMode: 0
+    - time: .102400012
+      value: .366178453
+      inSlope: -1.26198864
+      outSlope: -1.1787895
+      tangentMode: 0
+    - time: .43541953
+      value: .116121732
+      inSlope: -.441272229
+      outSlope: -.441272229
+      tangentMode: 0
+    - time: .9926548
+      value: 0
+      inSlope: 1.032479e-35
+      outSlope: 2.29812948e-40
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11405782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b859200c975f2a18dc7234a4c5ddb5b7, type: 1}
+  m_Name: 
+  followg: {fileID: 0}
+--- !u!114 &11461526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 819ba16742ad23900691f25653e2a666, type: 1}
+  m_Name: 
+  timeOut: 4
+  detachChildren: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

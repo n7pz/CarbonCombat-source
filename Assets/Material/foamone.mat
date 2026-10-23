@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: foamone
+  m_Shader: {fileID: 4800000, guid: 82c1c8b644cf3da4f88ff57e0d702db5, type: 1}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: bec05243787a18340a46d6f1210a65ad, type: 1}
+          m_Scale: {x: 1500, y: 5}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cutout
+        second:
+          m_Texture: {fileID: 2800000, guid: 5037441ac1b71864cb6268fe6ec66a48, type: 1}
+          m_Scale: {x: 150, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: 0.7
+      data:
+        first:
+          name: _Offset
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.65726703, g: 0.60654336, b: 0.5433054, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 1, g: 1, b: 1, a: 0}
+      data:
+        first:
+          name: _MainTex_ST
+        second: {r: 1, g: 1, b: 0, a: 0}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Emission
+        second: {r: 0.5282258, g: 0.5282258, b: 0.5282258, a: 0}
+      data:
+        first:
+          name: _Cutout_ST
+        second: {r: 1, g: 1, b: 0, a: 0}
+      data:
+        first:
+          name: _Glow
+        second: {r: 0, g: 0, b: 0, a: 0}

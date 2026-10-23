@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 479954}
+  - 82: {fileID: 8209266}
+  - 114: {fileID: 11405782}
+  m_Layer: 0
+  m_Name: CrashAudio Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4862.71387, y: -254.271729, z: 7919.54688}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!82 &8209266
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: f505605aaa12e16439b9b3b4bc5bfbc9, type: 1}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: .300000012
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 300
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 1.03247893e-35
+      outSlope: 2.24067624e-40
+      tangentMode: 0
+    - time: .000200000009
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .000400000019
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .000800000038
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .00160000008
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .00320000015
+      value: .994035721
+      inSlope: -4.94848871
+      outSlope: -4.93228436
+      tangentMode: 0
+    - time: .0064000003
+      value: .978473604
+      inSlope: -4.80199242
+      outSlope: -4.77218962
+      tangentMode: 0
+    - time: .0128000006
+      value: .948766589
+      inSlope: -4.52827644
+      outSlope: -4.47360754
+      tangentMode: 0
+    - time: .0256000012
+      value: .89445436
+      inSlope: -4.04657316
+      outSlope: -3.95495415
+      tangentMode: 0
+    - time: .0512000024
+      value: .802568197
+      inSlope: -3.28813887
+      outSlope: -3.15573978
+      tangentMode: 0
+    - time: .102400005
+      value: .665778995
+      inSlope: -2.29452276
+      outSlope: -2.14325261
+      tangentMode: 0
+    - time: .20480001
+      value: .496524334
+      inSlope: -1.29871464
+      outSlope: -1.17304015
+      tangentMode: 0
+    - time: .406882644
+      value: .303801626
+      inSlope: -.580904424
+      outSlope: -.507530808
+      tangentMode: 0
+    - time: .688765287
+      value: .131400794
+      inSlope: -.529668927
+      outSlope: -.529668927
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 1.03247893e-35
+      outSlope: 2.24067624e-40
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11405782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 819ba16742ad23900691f25653e2a666, type: 1}
+  m_Name: 
+  timeOut: 2
+  detachChildren: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WaterMat
+  m_Shader: {fileID: 4800000, guid: b636dbd8dd25eda48b0ba4984c4c13de, type: 1}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: d10eb922eefd0414c93fa5a9e6aeaaa0, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: 60
+      data:
+        first:
+          name: _InvFade
+        second: 3.3349054
+      data:
+        first:
+          name: _WaveScale
+        second: 0.043018866
+      data:
+        first:
+          name: _ReflDistort
+        second: 0.44
+      data:
+        first:
+          name: _RefrDistort
+        second: 0.4
+      data:
+        first:
+          name: _FresnelPower
+        second: 10
+      data:
+        first:
+          name: _ChromaticDispersion
+        second: 1.1320754
+      data:
+        first:
+          name: _Refraction
+        second: 100
+      data:
+        first:
+          name: _ReflToRefrExponent
+        second: 4
+      data:
+        first:
+          name: _BumpReflectionStr
+        second: 1
+      data:
+        first:
+          name: _Refractivity
+        second: 79.266045
+      data:
+        first:
+          name: _Ambient
+        second: 0
+      data:
+        first:
+          name: _Displacement
+        second: 0.9811321
+      data:
+        first:
+          name: _DisplacementTiling
+        second: 0.6886793
+      data:
+        first:
+          name: _InvFadeFoam
+        second: 4.25283
+      data:
+        first:
+          name: _ColorTextureOverlay
+        second: 0.8679245
+      data:
+        first:
+          name: _Speed
+        second: 0.566038
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.09177923, g: 0.12244898, b: 0.07714617, a: 0.36}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.19387758, g: 0.1896061, b: 0.15289654, a: 0.75}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 0.6997763, g: 0.8525107, b: 1, a: 1}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: WaveSpeed
+        second: {r: 19, g: 9, b: -16, a: -7}
+      data:
+        first:
+          name: _RefrColor
+        second: {r: 0.34, g: 0.85, b: 0.92, a: 0.22}
+      data:
+        first:
+          name: _HorizonColor
+        second: {r: 0.172, g: 0.463, b: 0.435, a: 1}
+      data:
+        first:
+          name: _horizonColor
+        second: {r: 0.172, g: 0.463, b: 0.435, a: 0}
+      data:
+        first:
+          name: RipplePosition
+        second: {r: 0.5, g: 0.5, b: 0.05, a: 0.05}
+      data:
+        first:
+          name: _WorldLightDir
+        second: {r: 0.3, g: 1, b: -0.6, a: 1}

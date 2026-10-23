@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sunny1 Skybox
+  m_Shader: {fileID: 104, guid: 0000000000000000e000000000000000, type: 0}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _FrontTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 46836eb39bec2324fb57fb72655f60b4, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BackTex
+        second:
+          m_Texture: {fileID: 2800000, guid: c4833f966d3affd45abe500ac1b49567, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _LeftTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 5397b4c82d27bd04094528f8459debf5, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _RightTex
+        second:
+          m_Texture: {fileID: 2800000, guid: e67fb2756d44c13488fe81ca49b3f64f, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _UpTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 5d5b97516ee505146aac6165b3cd8654, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DownTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 43060a767ee3cfe4ea9a535508dc54a6, type: 1}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Tint
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
