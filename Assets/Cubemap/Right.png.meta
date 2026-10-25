@@ -22,8 +22,8 @@ TextureImporter:
   isReadable: 1
   grayScaleToAlpha: 0
   generateCubemap: 5
-  textureFormat: 3
-  maxTextureSize: 2048
+  textureFormat: -1
+  maxTextureSize: 64
   textureSettings:
     filterMode: 1
     aniso: 1

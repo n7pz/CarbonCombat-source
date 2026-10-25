@@ -1362,6 +1362,10 @@ public class ChatScript : Photon.MonoBehaviour
 
 	public int listcount;
 
+	// Number of chat rows measured in the last Layout event. Sending a message adds to chatlist during
+	// the KeyDown event, and drawing more rows than were laid out makes GUILayout throw an ArgumentException.
+	private int chatrowsLaidOut;
+
 	private string team;
 
 	private Vector2 scrollpos;
@@ -2597,9 +2601,20 @@ public class ChatScript : Photon.MonoBehaviour
 			Color color13 = GUI.color;
 			float num10 = (color13.a = a5);
 			Color color14 = (GUI.color = color13);
+			if (Event.current.type == EventType.Layout)
+			{
+				chatrowsLaidOut = chatlist.length;
+			}
+			listcount = -1;
+			int chatrow = 0;
 			IEnumerator enumerator2 = UnityRuntimeServices.GetEnumerator(chatlist);
 			while (enumerator2.MoveNext())
 			{
+				if (chatrow >= chatrowsLaidOut)
+				{
+					break;
+				}
+				chatrow++;
 				object obj2 = enumerator2.Current;
 				if (!(obj2 is string))
 				{

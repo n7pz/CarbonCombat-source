@@ -527,6 +527,12 @@ public class LoginWindow : Photon.MonoBehaviour
 					break;
 				case 2:
 					username = "guest_" + username.Split("_"[0])[UnityScript.Lang.Extensions.get_length((System.Array)username.Split("_"[0])) - 1];
+					// The guest box is prefilled with the "Username"/"Username_Temp" placeholders, which made every
+					// guest on one PC "guest_Temp". Give placeholder names a random ID like the AI guests get.
+					if (username == "guest_" || username == "guest_Temp" || username == "guest_Username")
+					{
+						username = "guest_" + UnityEngine.Random.Range(10000, 99999).ToString();
+					}
 					AuthGameObject.username = username;
 					_0024self__00244799.progresslab = "Guest ID created!";
 					logincookie = true;
