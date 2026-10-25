@@ -4632,9 +4632,9 @@ Transform:
   - {fileID: 427960}
   - {fileID: 486761}
   - {fileID: 429928}
+  - {fileID: 476788}
   - {fileID: 452230}
   - {fileID: 431462}
-  - {fileID: 476788}
   - {fileID: 434711}
   - {fileID: 435059}
   - {fileID: 493611}
@@ -10047,7 +10047,7 @@ MeshFilter:
   m_Mesh: {fileID: 4300000, guid: cb438fe89f20acf4d9a993020dc2b82c, type: 2}
 --- !u!33 &3310764
 MeshFilter:
-  m_ObjectHideFlags: 13
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168464}
