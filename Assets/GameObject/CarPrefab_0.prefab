@@ -1164,7 +1164,7 @@ GameObject:
   - 114: {fileID: 11448405}
   m_Layer: 10
   m_Name: MainBoxCol
-  m_TagString: BlueObjects
+  m_TagString: RedObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5085,10 +5085,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147589}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6869.0376, y: 87.2217789, z: 7446.79785}
+  m_LocalRotation: {x: .816855192, y: 0, z: 0, w: .576842844}
+  m_LocalPosition: {x: 6869.0376, y: -7028.79492, z: -2389.23901}
   m_LocalScale: {x: 2, y: 2, z: 2}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 70.4575806, y: -180, z: -180}
   m_Children:
   - {fileID: 418124}
   - {fileID: 430067}
@@ -8708,7 +8708,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 6b36c5876cf0daa419d41d9c79261d86, type: 2}
+  - {fileID: 2100000, guid: 2c0e658982b944a46b961bfcc8ce7fea, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -8938,7 +8938,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 87c3821eae4c4ec42b7da764da480229, type: 2}
+  - {fileID: 2100000, guid: 3be6a6a1e275d3d478e743696ff48dfe, type: 2}
   - {fileID: 2100000, guid: fbb7264bce4f60e4cae694e542918967, type: 2}
   - {fileID: 2100000, guid: 787165172c7693a4faff244bb466feb9, type: 2}
   - {fileID: 2100000, guid: fbb7264bce4f60e4cae694e542918967, type: 2}

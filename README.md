@@ -98,7 +98,7 @@ The project is still undergoing restoration. The following issues are known at t
 - **Legacy Unity compatibility:** The project targets Unity 3.5.2f2. Compatibility with modern Unity versions is not guaranteed.
 - **Untested functionality:** Not every scene, asset, or gameplay system has been fully tested since recovery.
 - **Additional issues:** Further problems may be discovered as restoration and testing continue.
-- **As of initial publishing:** Red team car prefab has a misassigned UI element
+
 
 This list is not exhaustive and will be updated as new issues are identified and existing ones are resolved.
 
