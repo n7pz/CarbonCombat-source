@@ -20,7 +20,7 @@ The immediate goal is to establish a usable baseline of the recovered project be
 - [x] Fix compilation errors
 - [x] Fix critical car textures and prefabs
 - [x] Fix critical water shaders
-- [ ] Restore remaining shaders
+- [x] Restore remaining shaders
 - [ ] Continue testing and documenting issues
 - [ ] Establish a stable baseline for future development
 
@@ -30,9 +30,9 @@ A partially restored project is still worth preserving. Remaining issues are doc
 
 ## Technical Information
 
-**Target Unity version: Unity 3.5.2f2**
+**Target Unity version: Unity 3.5.2f2 and/or Unity3.5.6f4**
 
-This repository targets Unity 3.5.2f2 specifically. Opening or upgrading the project directly in a different Unity version may cause compatibility problems, break assets or scripts, or result in editor instability.
+This repository targets Unity 3.5.2f2 and 3.5.6f4 specifically. Opening or upgrading the project directly in a different Unity version may cause compatibility problems, break assets or scripts, or result in editor instability.
 
 For the initial restoration, use the target version rather than attempting an engine upgrade.
 
@@ -44,7 +44,7 @@ For the initial restoration, use the target version rather than attempting an en
 4. Allow Unity to import the project assets.
 5. Check the Console for errors and consult the repository's Issues page for known problems.
 
-**Legacy editor:** [Unity 3.5.2 installer](https://beta.unity3d.com/download/UnitySetup-3.5.2.exe)
+**Legacy editor:** [Unity 3.5.2 installer](https://beta.unity3d.com/download/UnitySetup-3.5.2.exe) [Unity 3.5.6 installer](https://beta.unity3d.com/download/UnitySetup-3.5.6.exe)
 
 If the direct installer link is unavailable, let me know.
 
