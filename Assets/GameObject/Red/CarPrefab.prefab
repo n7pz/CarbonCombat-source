@@ -2072,7 +2072,7 @@ GameObject:
   - 114: {fileID: 11425934}
   - 114: {fileID: 11443171}
   m_Layer: 10
-  m_Name: CarPrefab_0
+  m_Name: CarPrefab
   m_TagString: RedTeam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12181,7 +12181,7 @@ MonoBehaviour:
   burnflames: {fileID: 1581466}
   aimanager: {fileID: 11426796}
   explosion: {fileID: 147589, guid: 87a317d82ba35414ab491fcce510e848, type: 2}
-  teamtype: blue
+  teamtype: red
   weaponDropPrefab: {fileID: 147589, guid: ca281c3a8bc62a04d9fc5ff2855a54b3, type: 2}
   goldPrefab: {fileID: 147589, guid: 7f084ca887a44e64dbd262a96c76ce69, type: 2}
   glowObjs:
@@ -12353,7 +12353,7 @@ MonoBehaviour:
   m_Name: 
   nameobject: {fileID: 165029}
   aimanager: {fileID: 11426796}
-  team: blue
+  team: red
   isHuman: 0
 --- !u!114 &11423766
 MonoBehaviour:

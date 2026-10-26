@@ -41,6 +41,7 @@ public class WhirldIn : Photon.MonoBehaviour
 				switch (_state)
 				{
 				default:
+					UnloadAllBundles();
 					status = WhirldInStatus.Working;
 					_0024self__00245168.url = _0024u_00245167;
 					if (_0024self__00245168.url.Length < 5)
@@ -330,7 +331,7 @@ public class WhirldIn : Photon.MonoBehaviour
 					Application.LoadLevel("CCWhirldScene");
 					_0024tme_00245172 = Time.time;
 					progress = 1f;
-					_0024self__00245243.loadingAssetBundles.Add(_0024assetBundle_00245242);
+					_0024self__00245243.TrackBundle(_0024assetBundle_00245242);
 					if (!Whirld.Controller)
 					{
 						_0024self__00245243.info = "Whirld Bundle contains broken controller\n";
@@ -1759,7 +1760,7 @@ public class WhirldIn : Photon.MonoBehaviour
 					}
 					_0024self__00245340.CacheStore(_0024url_00245336, _0024www_00245337.bytes);
 					_0024self__00245340.threads[_0024thread_00245335] = "Initializing Bundle";
-					_0024self__00245340.loadingAssetBundles.Add(_0024www_00245337.assetBundle);
+					_0024self__00245340.TrackBundle(_0024www_00245337.assetBundle);
 					_0024self__00245340.threads.Remove(_0024thread_00245335);
 					_0024self__00245340.threadAssetBundles--;
 					YieldDefault(1);
@@ -1905,7 +1906,7 @@ public class WhirldIn : Photon.MonoBehaviour
 						result = (YieldDefault(6) ? 1 : 0);
 						break;
 					}
-					_0024self__00245353.loadingAssetBundles.Add(_0024www_00245348.assetBundle);
+					_0024self__00245353.TrackBundle(_0024www_00245348.assetBundle);
 					_0024self__00245353.threads.Remove(_0024thread_00245344);
 					YieldDefault(1);
 					goto case 1;
@@ -3093,6 +3094,11 @@ public class WhirldIn : Photon.MonoBehaviour
 
 	public AssetBundle[] loadedAssetBundles;
 
+	// Every bundle any WhirldIn has loaded. The instance list above is lost when the menu destroys a disabled
+	// WhirldIn (OnDisable doesn't run then) or a failed load deactivates it, which left the old map's bundle
+	// loaded and made the next map fail with "another asset bundle with the same files are already loaded".
+	private static System.Collections.Generic.List<AssetBundle> allLoadedBundles = new System.Collections.Generic.List<AssetBundle>();
+
 	public Hashtable objects;
 
 	public Hashtable textures;
@@ -3149,6 +3155,32 @@ public class WhirldIn : Photon.MonoBehaviour
 		Cleanup();
 	}
 
+	public virtual void OnDestroy()
+	{
+		Cleanup();
+	}
+
+	public virtual void TrackBundle(AssetBundle bundle)
+	{
+		loadingAssetBundles.Add(bundle);
+		if ((bool)bundle && !allLoadedBundles.Contains(bundle))
+		{
+			allLoadedBundles.Add(bundle);
+		}
+	}
+
+	public static void UnloadAllBundles()
+	{
+		for (int i = 0; i < allLoadedBundles.Count; i++)
+		{
+			if ((bool)allLoadedBundles[i])
+			{
+				allLoadedBundles[i].Unload(true);
+			}
+		}
+		allLoadedBundles.Clear();
+	}
+
 	public virtual void Cleanup()
 	{
 		if (loadingAssetBundles.length > 0)
@@ -3158,7 +3190,11 @@ public class WhirldIn : Photon.MonoBehaviour
 			AssetBundle[] array = loadedAssetBundles;
 			for (int length = array.Length; i < length; i++)
 			{
-				array[i].Unload(true);
+				if ((bool)array[i])
+				{
+					allLoadedBundles.Remove(array[i]);
+					array[i].Unload(true);
+				}
 			}
 			loadingAssetBundles.Clear();
 		}
@@ -3187,7 +3223,10 @@ public class WhirldIn : Photon.MonoBehaviour
 
 	public virtual void Update()
 	{
-		if (Application.isLoadingLevel && Application.loadedLevelName == "CCWhirldScene")
+		// Only reset while no load tasks are running: a map's streamed scene is loaded additively inside
+		// CCWhirldScene, and switching off then ran Cleanup(), unloading the map's texture bundle mid-load
+		// ("Terrain splat 0 is null", pink terrain on maps like Freestyle).
+		if (Application.isLoadingLevel && Application.loadedLevelName == "CCWhirldScene" && threads.Count == 0)
 		{
 			hassea = false;
 			progress = 0f;

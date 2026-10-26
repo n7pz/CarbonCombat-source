@@ -38,7 +38,18 @@ public class shadow : MonoBehaviour
 		opacity = Mathf.Lerp(maxOpacity, 0f, num * (1f / distanceTolerance));
 		transform.position = castingPoint.position;
 		RaycastHit[] array = null;
-		array = Physics.RaycastAll(transform.position + Vector3.up * 0.5f, -Vector3.up);
+		// The 64-bit player crashes inside PhysX (HybridRayCollider::TestLeaf) on an unbounded RaycastAll when another
+		// player's freshly spawned HumanPrefab runs this. A blob shadow only needs the ground just below, so cap the
+		// distance and skip invalid positions.
+		Vector3 origin = transform.position + Vector3.up * 0.5f;
+		if (float.IsNaN(origin.x) || float.IsNaN(origin.y) || float.IsNaN(origin.z) || float.IsInfinity(origin.x) || float.IsInfinity(origin.y) || float.IsInfinity(origin.z))
+		{
+			array = new RaycastHit[0];
+		}
+		else
+		{
+			array = Physics.RaycastAll(origin, -Vector3.up, 100f);
+		}
 		float num2 = -999999f;
 		for (int i = 0; i < array.Length; i++)
 		{
