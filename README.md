@@ -2,7 +2,7 @@
 
 **An ongoing source recovery and preservation project for Carbon Combat.**
 
-> HEADS UP: **Work in progress.** The project is still being restored. Some assets and shaders have been fixed, but other issues remain.
+> HEADS UP: **The original game has been restored (v1.0.0).** The project opens, builds and runs as the original game did. Testing continues, and some inherited issues remain.
 
 ## About
 
@@ -14,15 +14,16 @@ The immediate goal is to establish a usable baseline of the recovered project be
 
 ## Project Status
 
-**Current checkpoint: Initial restoration — preparing for Git publication**
+**Current checkpoint: v1.0.0 — original game restored**
 
 - [x] Recover the Unity project and its assets
 - [x] Fix compilation errors
 - [x] Fix critical car textures and prefabs
 - [x] Fix critical water shaders
 - [x] Restore remaining shaders
+- [x] Build the project to a working executable
+- [x] Establish a stable baseline for future development (tag `v1.0.0`)
 - [ ] Continue testing and documenting issues
-- [ ] Establish a stable baseline for future development
 
 This checklist reflects the current restoration work and will change as the project progresses.
 
@@ -39,7 +40,7 @@ For the initial restoration, use the target version rather than attempting an en
 ## Opening the Project
 
 1. Clone or download this repository.
-2. Obtain a compatible Unity 3.5.2f2 editor.
+2. Obtain a compatible Unity 3.5.2f2 or 3.5.6f4 editor.
 3. Open the recovered project using that editor.
 4. Allow Unity to import the project assets.
 5. Check the Console for errors and consult the repository's Issues page for known problems.
@@ -48,13 +49,13 @@ For the initial restoration, use the target version rather than attempting an en
 
 If the direct installer link is unavailable, let me know.
 
-> **Note:** The project is not guaranteed to work out of the box. Some shaders, assets, and other components may still require restoration.
+> **Note:** The project is not guaranteed to work out of the box. Some components may still have inherited or untested problems.
 
 ## Scope
 
 This repository focuses on the recovered original Unity project and its restoration.
 
-It is intended to provide a baseline for preservation, investigation, and continued work on the original project. Future development beyond that baseline may be maintained separately.
+It is intended to provide a baseline for preservation, investigation, and continued work on the original project. The `v1.0.0` tag marks the restored original game. Future development beyond that baseline may be maintained separately.
 
 ## Contributing and Bug Reports
 
@@ -85,17 +86,19 @@ Applicable third-party notices and licensing requirements must be respected. Per
 
 ## Disclaimer
 
-This is an independent preservation and restoration project. It is a work in progress and is not presented as a finished, fully functional revival of the original game.
+This is an independent preservation and restoration project. It restores the original game as it was, including its original limitations, and is not presented as a fully functional revival of the original online service.
 
 Its purpose is to preserve the recovered project, document restoration work, and make further investigation possible.
 
 ## Known Issues
 
-The project is still undergoing restoration. The following issues are known at this stage:
+The original game has been restored. The following issues are known at this stage:
 
-- **Remaining shaders:** Not all shaders have been restored, and some may render incorrectly. Vanilla scenes are expected to load, but custom maps are currently not working.
+- **Shaders:** The original compiled shaders have been restored. Vanilla scenes and custom maps load.
+- **Defunct map hosts:** Some built-in maps are downloaded from the original map servers (such as `map.syn3h.com`), which are no longer online, so those maps cannot load. The original URLs are kept unchanged to preserve the original game.
 - **Legacy multiplayer and backend functionality:** The recovered executable and project may contain inherited bugs and incomplete functionality associated with legacy Photon networking or the original backend. The extent of these issues remains under investigation.
-- **Legacy Unity compatibility:** The project targets Unity 3.5.2f2. Compatibility with modern Unity versions is not guaranteed.
+- **Inherited gameplay behaviour:** Some behaviour comes from the original game and is kept as is. For example, in Capture the Flag a host cannot pick up flags until another real player joins, and the on-foot character looks the same on both teams.
+- **Legacy Unity compatibility:** The project targets Unity 3.5.2f2 and 3.5.6f4. Compatibility with modern Unity versions is not guaranteed.
 - **Untested functionality:** Not every scene, asset, or gameplay system has been fully tested since recovery.
 - **Additional issues:** Further problems may be discovered as restoration and testing continue.
 

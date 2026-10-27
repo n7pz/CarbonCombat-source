@@ -13,6 +13,7 @@ SubShader {
  Pass {
   Name "BASE"
   Tags { "LIGHTMODE"="Always" "QUEUE"="Transparent+100" "RenderType"="Opaque" }
+  Fog { Mode Off }
 Program "vp" {
 SubProgram "opengl " {
 Bind "vertex" Vertex
@@ -87,7 +88,6 @@ SetTexture 1 [_BumpMap] 2D
 SetTexture 2 [_MainTex] 2D
 "!!ARBfp1.0
 OPTION ARB_precision_hint_fastest;
-OPTION ARB_fog_exp2;
 # 9 ALU, 3 TEX
 PARAM c[3] = { program.local[0..1],
 		{ 2, 1 } };
@@ -142,6 +142,7 @@ SubShader {
  Pass {
   Name "BASE"
   Tags { "QUEUE"="Transparent+100" "RenderType"="Opaque" }
+  Fog { Mode Off }
   Blend DstColor Zero
   SetTexture [_MainTex] { combine texture }
  }
