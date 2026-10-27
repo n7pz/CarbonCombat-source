@@ -3,6 +3,7 @@
 **An ongoing source recovery and preservation project for Carbon Combat.**
 
 > HEADS UP: **The original game has been restored (v1.0.0).** The project opens, builds and runs as the original game did. Testing continues, and some inherited issues remain.
+> Download latest build here: https://rinna.s-ul.eu/carboncombattestbuilds/bBRRz3pA
 
 ## About
 
